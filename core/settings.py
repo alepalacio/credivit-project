@@ -42,12 +42,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     # Third party apps
     'rest_framework',
     'crispy_forms',
+    
     # Local apps
     'usuarios',
+    'perfiles',
     'prospectos',
+    'ventas',
+    'reportes',
 ]
 
 # Crispy-Forms configurations

@@ -1,9 +1,11 @@
 from django.db import models
+from django.contrib.auth.models import User
 from tags.tags import *
 
 # Create your models here.
 
 class Prospect(models.Model):
+    salesman = models.ForeignKey(User, on_delete=models.CASCADE)
     prospect_name = models.CharField(max_length=120)
     nss = models.BigIntegerField(unique=True)
     birth_date = models.DateField(blank=True)
