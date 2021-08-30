@@ -50,9 +50,10 @@ INSTALLED_APPS = [
     # Local apps
     'usuarios',
     'perfiles',
+    'preprospectos',
     'prospectos',
-    'ventas',
     'reportes',
+    'ventas',
 ]
 
 # Crispy-Forms configurations

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+Lista de prospectos
+
+{% endblock title %}
+
+{% block content %}
+
+Lista de prospectos:
+
+<br>
+
+{% for prospecto in prospectos %}
+
+    {{prospecto.prospect_name}}<br>
+
+{% endfor %}
+
+{% endblock content %}
