@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+Lista preprospectos
+{% endblock title %}
+
+{% block content %}
+Lista de preprospectos:<br>
+<hr>
+{% for preprospecto in preprospectos %}
+    <div class="card mb-3">
+        <a href="{% url 'preprospectos:detail' preprospecto.pk %}" class="card-body">{{preprospecto.prospect_name}}</a><br>
+        <!--<a href="{{preprospecto.get_absolute_url}}">{{preprospecto.prospect_name}}</a><br>-->
+    </div>
+{% endfor %}
+{% endblock content%}

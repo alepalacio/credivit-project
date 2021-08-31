@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+Preprospecto: {{object.id}}
+{% endblock title%}
+
+{% block content %}
+Id preprospecto: {{object.pk}}
+<br>
+Vendedor: {{object.salesman}}
+<br>
+Monto total: {{object.total_amount}}
+<br>
+{% endblock content %}

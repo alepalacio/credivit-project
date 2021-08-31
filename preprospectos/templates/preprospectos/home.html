@@ -2,11 +2,11 @@
 {% load crispy_forms_tags %}
 
 {% block title %}
-Home P
+Home PP
 {% endblock title %}
 
 {% block content %}
-Welcome to prospects:
+Welcome to preprospects:
 <hr>
 
 <form action="" method="POST">
@@ -14,12 +14,4 @@ Welcome to prospects:
     {{form|crispy}}
     <button type="submit" class="btn btn-primary mt-3">Search</button>
 </form>
-<br>
-<hr>
-
-{% if prospectos_df %}
-    {{prospectos_df|safe}}
-{% else %}
-    <h3>No data</h3>
-{% endif%}
 {% endblock content %}

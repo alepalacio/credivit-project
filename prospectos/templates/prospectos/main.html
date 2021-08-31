@@ -1,21 +1,14 @@
 {% extends "base.html" %}
 
 {% block title %}
-
 Lista de prospectos
-
 {% endblock title %}
 
 {% block content %}
-
 Lista de prospectos:
-
 <br>
-
+<hr>
 {% for prospecto in prospectos %}
-
-    {{prospecto.prospect_name}}<br>
-
+    <a href="{{prospecto.get_absolute_url}}">{{prospecto.prospect_name}}</a><br>
 {% endfor %}
-
 {% endblock content %}

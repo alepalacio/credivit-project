@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 from tags.tags import *
 
 # Create your models here.
@@ -24,3 +25,6 @@ class Prospect(models.Model):
     
     def __str__(self):
         return f"{self.prospect_name} - NSS: {self.nss} / {self.created_at.strftime('%d/%m/%Y')}"
+    
+    def get_absolute_url(self):
+        return reverse('prospectos:detail', kwargs={'pk':self.pk})
